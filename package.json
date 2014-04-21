@@ -1,0 +1,44 @@
+{
+  "name": "weekday",
+  "description": "Get the name and number of the current weekday. Or get the name of the weekday for a given number.",
+  "version": "0.1.1",
+  "homepage": "https://github.com/jonschlinkert/weekday",
+  "author": {
+    "name": "Jon Schlinkert",
+    "url": "https://github.com/jonschlinkert"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jonschlinkert/weekday.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jonschlinkert/weekday/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/jonschlinkert/weekday/blob/master/LICENSE-MIT"
+    }
+  ],
+  "keywords": [
+    "docs",
+    "documentation",
+    "generate",
+    "generator",
+    "markdown",
+    "templates",
+    "verb"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": ">=0.8"
+  },
+  "scripts": {
+    "test": "mocha -R spec"
+  },
+  "devDependencies": {
+    "verb": "~0.2.0",
+    "chai": "~1.9.1",
+    "mocha": "~1.18.2"
+  }
+}
