@@ -11,3 +11,7 @@ TODO.md
 *.rar
 
 /npm-debug.log
+
+# npmignore
+test.js
+test
