@@ -5,21 +5,25 @@
  * Licensed under the MIT license.
  */
 
-var weekdays = [
-  'Monday',
-  'Tuesday',
-  'Wednesday',
-  'Thursday',
-  'Friday',
-  'Saturday',
-  'Sunday'
-];
+'use strict';
+
+var isNumber = require('is-number');
+var days = require('days');
 
 module.exports = function (num) {
-  var day = Number(num || new Date().getUTCDay());
+  var day = new Date().getUTCDay();
 
-  return {
-    num: day,
-    name: weekdays[day - 1]
+  if (typeof num === 'undefined') {
+    return day;
   }
+
+  if (isNumber(+num)) {
+    return days[num - 1];
+  }
+
+  if (typeof num !== 'string') {
+    throw new Error('[weekday] expects a string or number, but got: ' + num);
+  }
+
+  return days.indexOf(num) + 1;
 };
