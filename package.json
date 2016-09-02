@@ -3,37 +3,34 @@
   "description": "Get the name and number of the current weekday. Or get the name of the weekday for a given number.",
   "version": "1.0.0",
   "homepage": "https://github.com/jonschlinkert/weekday",
-  "author": {
-    "name": "Jon Schlinkert",
-    "url": "https://github.com/jonschlinkert"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jonschlinkert/weekday.git"
-  },
+  "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+  "contributors": [
+    "David Öhlin <hello@davidohlin.se> (http://davidohl.in)",
+    "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)"
+  ],
+  "repository": "jonschlinkert/weekday",
   "bugs": {
     "url": "https://github.com/jonschlinkert/weekday/issues"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "https://github.com/jonschlinkert/weekday/blob/master/LICENSE-MIT"
-    }
+  "license": "MIT",
+  "files": [
+    "index.js",
+    "README.md"
   ],
   "main": "index.js",
   "engines": {
     "node": ">=0.8"
   },
   "scripts": {
-    "test": "mocha -R spec"
+    "test": "mocha"
   },
   "dependencies": {
     "days": "^1.0.1",
     "is-number": "^0.1.1"
   },
   "devDependencies": {
-    "mocha": "~1.18.2",
-    "should": "^4.3.0"
+    "gulp-format-md": "^0.1.10",
+    "mocha": "~1.18.2"
   },
   "keywords": [
     "calendar",
@@ -45,5 +42,30 @@
     "name",
     "week",
     "weekday"
-  ]
+  ],
+  "verb": {
+    "toc": false,
+    "layout": "default",
+    "tasks": [
+      "readme"
+    ],
+    "plugins": [
+      "gulp-format-md"
+    ],
+    "lint": {
+      "reflinks": true
+    },
+    "related": {
+      "list": [
+        "time-diff",
+        "time-stamp",
+        "week",
+        "year"
+      ]
+    },
+    "reflinks": [
+      "verb",
+      "verb-generate-readme"
+    ]
+  }
 }
