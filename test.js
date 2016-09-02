@@ -8,19 +8,19 @@
 'use strict';
 
 var should = require('should');
+var days = require('days');
 var weekday = require('./');
 
-
 describe('weekday()', function () {
-  it('should return an object with the number and name of the current weekday', function () {
-    weekday().should.equal(new Date().getUTCDay())
+  it('should return the name of the current weekday', function () {
+    weekday().should.equal(days[new Date().getUTCDay()]);
   });
 
-  it('should return the current weekday name', function () {
+  it('should return a weekday name', function () {
     weekday(1).should.be.a.string;
   });
 
-  it('should return the current weekday number', function () {
+  it('should return a weekday number', function () {
     weekday('Sunday').should.be.a.number;
   });
 

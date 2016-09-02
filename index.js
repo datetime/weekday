@@ -14,7 +14,7 @@ module.exports = function (num) {
   var day = new Date().getUTCDay();
 
   if (typeof num === 'undefined') {
-    return day;
+    num = day + 1;
   }
 
   if (isNumber(+num)) {
@@ -25,5 +25,5 @@ module.exports = function (num) {
     throw new Error('[weekday] expects a string or number, but got: ' + num);
   }
 
-  return days.indexOf(num) + 1;
+  return days.indexOf(num);
 };
