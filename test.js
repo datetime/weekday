@@ -7,40 +7,40 @@
 
 'use strict';
 
-var should = require('should');
+var assert = require('assert');
 var days = require('days');
 var weekday = require('./');
 
 describe('weekday()', function () {
   it('should return the name of the current weekday', function () {
-    weekday().should.equal(days[new Date().getUTCDay()]);
+    assert.equal(weekday(), days[new Date().getUTCDay()]);
   });
 
   it('should return a weekday name', function () {
-    weekday(1).should.be.a.string;
+    assert.equal(typeof weekday(1), 'string');
   });
 
   it('should return a weekday number', function () {
-    weekday('Sunday').should.be.a.number;
+    assert.equal(typeof weekday('Sunday'), 'number');
   });
 
   it('should return the given weekday', function () {
-    weekday(1).should.equal('Sunday');
-    weekday(2).should.equal('Monday');
-    weekday(3).should.equal('Tuesday');
-    weekday(4).should.equal('Wednesday');
-    weekday(5).should.equal('Thursday');
-    weekday(6).should.equal('Friday');
-    weekday(7).should.equal('Saturday');
+    assert.equal(weekday(1), 'Sunday');
+    assert.equal(weekday(2), 'Monday');
+    assert.equal(weekday(3), 'Tuesday');
+    assert.equal(weekday(4), 'Wednesday');
+    assert.equal(weekday(5), 'Thursday');
+    assert.equal(weekday(6), 'Friday');
+    assert.equal(weekday(7), 'Saturday');
   });
 
   it('should return the given weekday', function () {
-    weekday('1').should.equal('Sunday');
-    weekday('2').should.equal('Monday');
-    weekday('3').should.equal('Tuesday');
-    weekday('4').should.equal('Wednesday');
-    weekday('5').should.equal('Thursday');
-    weekday('6').should.equal('Friday');
-    weekday('7').should.equal('Saturday');
+    assert.equal(weekday('1'), 'Sunday');
+    assert.equal(weekday('2'), 'Monday');
+    assert.equal(weekday('3'), 'Tuesday');
+    assert.equal(weekday('4'), 'Wednesday');
+    assert.equal(weekday('5'), 'Thursday');
+    assert.equal(weekday('6'), 'Friday');
+    assert.equal(weekday('7'), 'Saturday');
   });
 });
