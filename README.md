@@ -1,4 +1,4 @@
-# weekday [![NPM version](https://img.shields.io/npm/v/weekday.svg?style=flat)](https://www.npmjs.com/package/weekday) [![NPM downloads](https://img.shields.io/npm/dm/weekday.svg?style=flat)](https://npmjs.org/package/weekday) [![Build Status](https://img.shields.io/travis/jonschlinkert/weekday.svg?style=flat)](https://travis-ci.org/jonschlinkert/weekday)
+# weekday [![NPM version](https://img.shields.io/npm/v/weekday.svg?style=flat)](https://www.npmjs.com/package/weekday) [![NPM downloads](https://img.shields.io/npm/dm/weekday.svg?style=flat)](https://npmjs.org/package/weekday) [![Build Status](https://img.shields.io/travis/datetime/weekday.svg?style=flat)](https://travis-ci.org/datetime/weekday)
 
 > Get the name and number of the current weekday. Or get the name of the weekday for a given number.
 
@@ -72,7 +72,7 @@ $ npm install -d && npm test
 ### License
 
 Copyright © 2016, [Jon Schlinkert](https://github.com/jonschlinkert).
-Released under the [MIT license](https://github.com/jonschlinkert/weekday/blob/master/LICENSE).
+Released under the [MIT license](https://github.com/datetime/weekday/blob/master/LICENSE).
 
 ***
 
