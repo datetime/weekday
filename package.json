@@ -1,7 +1,7 @@
 {
   "name": "weekday",
   "description": "Get the name and number of the current weekday. Or get the name of the weekday for a given number.",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "homepage": "https://github.com/jonschlinkert/weekday",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
