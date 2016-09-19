@@ -11,7 +11,7 @@ var isNumber = require('is-number');
 var days = require('days');
 
 module.exports = function (num) {
-  var day = new Date().getUTCDay();
+  var day = new Date().getDay();
 
   if (typeof num === 'undefined') {
     num = day + 1;
