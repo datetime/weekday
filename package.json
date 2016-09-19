@@ -5,6 +5,7 @@
   "homepage": "https://github.com/jonschlinkert/weekday",
   "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
   "contributors": [
+    "Brent Vatne <brentvatne@gmail.com> (http://brentvatne.ca)",
     "David Öhlin <hello@davidohlin.se> (http://davidohl.in)",
     "Jon Schlinkert <jon.schlinkert@sellside.com> (http://twitter.com/jonschlinkert)"
   ],
@@ -14,8 +15,7 @@
   },
   "license": "MIT",
   "files": [
-    "index.js",
-    "README.md"
+    "index.js"
   ],
   "main": "index.js",
   "engines": {
@@ -52,9 +52,6 @@
     "plugins": [
       "gulp-format-md"
     ],
-    "lint": {
-      "reflinks": true
-    },
     "related": {
       "list": [
         "time-diff",
@@ -66,6 +63,9 @@
     "reflinks": [
       "verb",
       "verb-generate-readme"
-    ]
+    ],
+    "lint": {
+      "reflinks": true
+    }
   }
 }
